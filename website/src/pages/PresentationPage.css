@@ -1,0 +1,39 @@
+.presentation-page {
+  padding-top: 80px; /* Account for navigation */
+  min-height: 100vh;
+  background: #f5f7fa;
+}
+
+.presentation-header {
+  text-align: center;
+  padding: 2rem;
+  background: white;
+  border-bottom: 1px solid #e1e5e9;
+}
+
+.presentation-header h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.presentation-header p {
+  font-size: 1.1rem;
+  color: #666;
+}
+
+.presentation-container {
+  /* Full screen for the presentation */
+  width: 100%;
+  height: calc(100vh - 140px); /* Account for header and navigation */
+}
+
+/* Override some presentation styles for the embedded view */
+.presentation-container .presentation {
+  height: 100%;
+}
+
+.presentation-container .slide {
+  height: 100%;
+}

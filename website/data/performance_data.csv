@@ -1,0 +1,31 @@
+Asset,Period,Return_Percentage,Asset_Type,Market_Cap_Billions,Volatility_Score
+Bitcoin,YTD 2024,129.0,Cryptocurrency,1800,9
+Ethereum,YTD 2024,85.0,Cryptocurrency,800,8
+Gold,YTD 2024,32.2,Commodity,15000,3
+S&P 500,YTD 2024,28.3,Equity Index,45000,5
+Traditional 401k,YTD 2024,18.1,Retirement Fund,9000,4
+USDC,YTD 2024,0.2,Stablecoin,50,1
+Bitcoin,1-Year,153.1,Cryptocurrency,1800,9
+Ethereum,1-Year,120.0,Cryptocurrency,800,8
+Gold,1-Year,34.8,Commodity,15000,3
+S&P 500,1-Year,33.1,Equity Index,45000,5
+Traditional 401k,1-Year,18.1,Retirement Fund,9000,4
+USDC,1-Year,0.1,Stablecoin,50,1
+Bitcoin,3-Year,79.0,Cryptocurrency,1800,9
+Ethereum,3-Year,45.0,Cryptocurrency,800,8
+Gold,3-Year,53.1,Commodity,15000,3
+S&P 500,3-Year,34.1,Equity Index,45000,5
+Traditional 401k,3-Year,9.7,Retirement Fund,9000,4
+USDC,3-Year,0.0,Stablecoin,50,1
+Bitcoin,5-Year,1283.6,Cryptocurrency,1800,9
+Ethereum,5-Year,650.0,Cryptocurrency,800,8
+Gold,5-Year,84.6,Commodity,15000,3
+S&P 500,5-Year,96.7,Equity Index,45000,5
+Traditional 401k,5-Year,9.7,Retirement Fund,9000,4
+USDC,5-Year,0.0,Stablecoin,50,1
+Bitcoin,10-Year,26931.1,Cryptocurrency,1800,9
+Ethereum,10-Year,8500.0,Cryptocurrency,800,8
+Gold,10-Year,125.8,Commodity,15000,3
+S&P 500,10-Year,193.3,Equity Index,45000,5
+Traditional 401k,10-Year,8.0,Retirement Fund,9000,4
+USDC,10-Year,0.0,Stablecoin,50,1

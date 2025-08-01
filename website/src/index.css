@@ -1,0 +1,425 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.presentation {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  position: relative;
+}
+
+.slide-content {
+  text-align: center;
+  max-width: 900px;
+  width: 100%;
+}
+
+.slide-title {
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  background: linear-gradient(45deg, #fff, #e6f3ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.slide-subtitle {
+  font-size: 2.2rem;
+  margin-bottom: 3rem;
+  font-weight: 300;
+  opacity: 0.9;
+}
+
+.asset-icons {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.asset-item {
+  text-align: center;
+}
+
+.asset-symbol {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.asset-symbol.bitcoin {
+  color: #ffd700;
+}
+
+.asset-symbol.ethereum {
+  color: #627eea;
+}
+
+.asset-symbol.usdc {
+  color: #2775ca;
+}
+
+.asset-symbol.gold {
+  color: #ffd700;
+}
+
+.subtitle-secondary {
+  font-size: 1.2rem;
+  opacity: 0.8;
+  margin-top: 2rem;
+}
+
+.footer-text {
+  font-size: 1rem;
+  opacity: 0.7;
+  margin-top: 1rem;
+}
+
+/* Problem Slide Styles */
+.problem-title {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  color: #0066CC;
+}
+
+.problem-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  margin-bottom: 3rem;
+}
+
+.stat-item {
+  text-align: center;
+}
+
+.stat-number {
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: #dc3545;
+  margin-bottom: 1rem;
+}
+
+.stat-label {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.stat-subtext {
+  font-size: 1rem;
+  opacity: 0.7;
+  margin-top: 0.5rem;
+}
+
+.problem-box {
+  background: #fff3cd;
+  border: 1px solid #ffeaa7;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  text-align: left;
+}
+
+.problem-box-title {
+  color: #856404;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.problem-list {
+  color: #856404;
+  font-size: 1.1rem;
+  list-style: none;
+  padding-left: 0;
+}
+
+.problem-list li {
+  margin-bottom: 0.5rem;
+}
+
+.problem-conclusion {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #0066CC;
+}
+
+/* Performance Slide Styles */
+.performance-title {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #0066CC;
+}
+
+.performance-subtitle {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  opacity: 0.8;
+}
+
+.performance-table {
+  background: white;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+.table-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  background: #0066CC;
+  color: white;
+  font-weight: bold;
+  padding: 1rem;
+}
+
+.table-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 1rem;
+  border-bottom: 1px solid #eee;
+}
+
+.table-row:nth-child(even) {
+  background: #f8f9fa;
+}
+
+.bitcoin-cell, .bitcoin-col {
+  color: #f7931a;
+  font-weight: bold;
+}
+
+.traditional-cell, .traditional-col {
+  color: #0066CC;
+  font-weight: bold;
+}
+
+.gold-cell, .gold-col {
+  color: #ffd700;
+  font-weight: bold;
+}
+
+.period-cell {
+  font-weight: 600;
+}
+
+.performance-highlights {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.highlight-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: white;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.highlight-icon {
+  font-size: 2rem;
+}
+
+.highlight-text {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.performance-conclusion {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #0066CC;
+  text-align: center;
+}
+
+/* Solution Grid Styles */
+.solution-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.solution-item {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 2rem;
+  border-radius: 1rem;
+  text-align: center;
+  backdrop-filter: blur(10px);
+}
+
+.solution-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.solution-item h3 {
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+.solution-item p {
+  opacity: 0.9;
+  line-height: 1.5;
+}
+
+/* Risk and other slide styles */
+.risk-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.risk-section {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.risk-section h3 {
+  color: #0066CC;
+  margin-bottom: 1rem;
+}
+
+.risk-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.risk-section li {
+  margin-bottom: 0.5rem;
+  padding-left: 1rem;
+  position: relative;
+}
+
+.risk-section li::before {
+  content: "•";
+  color: #0066CC;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+
+/* Schwab brand colors */
+.schwab-primary {
+  background: linear-gradient(135deg, #0066CC 0%, #004499 100%);
+  color: white;
+}
+
+.schwab-secondary {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  color: #333;
+}
+
+.chart-container {
+  width: 100%;
+  max-width: 800px;
+  height: 400px;
+  margin: 1rem 0;
+}
+
+.slide-navigation {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  display: flex;
+  gap: 1rem;
+  z-index: 1000;
+}
+
+.nav-button {
+  padding: 0.5rem 1rem;
+  background: #0066CC;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.nav-button:hover {
+  background: #004499;
+}
+
+.nav-button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+/* Schwab Logo Styles */
+.schwab-logo {
+  opacity: 0.85;
+  transition: opacity 0.3s ease;
+}
+
+.schwab-logo:hover {
+  opacity: 1;
+}
+
+.schwab-logo svg text {
+  font-family: 'Arial', 'Helvetica', sans-serif;
+  letter-spacing: 0.5px;
+}
+
+/* Responsive logo positioning */
+@media (max-width: 768px) {
+  .schwab-logo {
+    transform: scale(0.8);
+  }
+}
+
+@media (max-width: 480px) {
+  .schwab-logo {
+    transform: scale(0.6);
+  }
+}
