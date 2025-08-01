@@ -15,7 +15,7 @@ This project was developed as the final capstone for SMU's DS 6380 - Storytellin
 
 ## 🚀 Live Demo
 
-Visit the live website: [https://jonathanrocha.github.io/retirement-revolution](https://jonathanrocha.github.io/retirement-revolution)
+Visit the live website: [https://jonx0037.github.io/retirement-revolution](https://jonx0037.github.io/retirement-revolution)
 
 ## 📊 Project Highlights
 
@@ -89,7 +89,7 @@ retirement-revolution/
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/jonathanrocha/retirement-revolution.git
+git clone https://github.com/jonx0037/retirement-revolution.git
 cd retirement-revolution
 ```
 
