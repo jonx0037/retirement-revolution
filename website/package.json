@@ -2,7 +2,7 @@
   "name": "retirement-revolution",
   "version": "1.0.0",
   "description": "Interactive presentation for Charles Schwab 401K transformation with crypto and gold assets",
-  "homepage": "https://jonathanrocha.github.io/retirement-revolution",
+  "homepage": "https://jonx0037.github.io/retirement-revolution",
   "main": "index.js",
   "scripts": {
     "dev": "vite",
