@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import Navigation from './components/Navigation';
 import HomePage from './pages/HomePage';
 import PresentationPage from './pages/PresentationPage';
@@ -9,7 +9,7 @@ import './App.css';
 
 function App() {
   return (
-    <Router basename="/retirement-revolution">
+    <Router>
       <div className="App">
         <Navigation />
         <main className="main-content">
